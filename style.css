@@ -1,0 +1,85 @@
+/*ESTILOS GERAIS */
+
+body {
+  margin: 0; /*remove a margem padrão do navegador*/
+  padding: 0; /*remove o preenchimento padrão do navegador*/
+  font-family: 'Segoe UI', sans-serif; /*Fonte padrão*/
+  background-image: url('img/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg'); /*imagem de fundo*/
+  background-size: cover;       /* cobre toda a tela, sem deixar espaços */
+  background-repeat: no-repeat;  /* imagem não se repete */
+  background-position:  center; /*centraliza a imagem*/
+  background-color: #e0e2e0; /*Cor de fundo se a imagem não carregar*/
+  color: #fff6f6; /*Cor da fonte padrão*/
+  display: flex;  /* Ativa o modelo flexbox */
+  flex-direction: column; /* Os elementos filhos ficam empilhados verticalmente */
+  align-items: center; /* Alinha os elementos filhos ao centro (horizontalmente) */
+  min-height: 100vh; /* Garante que o body tenha no mínimo a altura da tela */
+}
+
+/*TITULO DO HORÁRIO*/
+h1#horario {
+  margin: 30px 0 20px 0; /* Margem: topo 30px, direita 0, baixo 20px, esquerda 0 */
+  color: #042b30; /* Azul escuro*/
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Ocupa toda a largura disponível */
+  user-select: none; /* Impede o usuário de selecionar o texto */  
+  font-size: 100px;  /* Tamanho final da fonte */        
+}
+
+/*CONTAINER PRINCIPAL*/
+.container {
+  background: rgba(13, 49, 117, 0.65); /* use rgba para melhor controle da transparência */
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 12px; /* Cantos arredondados */
+  box-shadow: 0 4px 15px rgba(233, 231, 231, 0.1); /* Sombra leve ao redor */
+  text-align: center; /* Centraliza o texto dentro do container */
+  max-width: 400px; /* Largura máxima do container */
+  width: 90%; /* Largura relativa para telas menores */
+  margin-top: 20px; /* Espaço acima do container */
+}
+
+/*CAMPO DE ENTREDA*/
+input {
+  padding: 10px; /* Espaçamento interno */
+  width: 80%; /* Largura de 80% do container */
+  border-radius: 8px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  margin-bottom: 10px;
+  font-size: 1rem; /* Tamanho da fonte */
+}
+
+/*BOTÃO*/
+button {
+  padding: 10px 20px; /* Espaçamento interno: 10px em cima/baixo, 20px nos lados */
+  background-color: #0d0741; /* Cor de fundo azul escuro */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 8px;  /* Bordas arredondadas */
+  cursor: pointer; /* Altera o cursor ao passar por cima */
+  font-size: 1rem; /* Tamanho do texto */
+  transition: background-color 0.3s ease; /*Animação de mudança de cor*/
+}
+
+/*Mouse no botão*/
+
+button:hover {
+  background-color: #005dc1; /* Cor de fundo mais clara ao passar o mouse */
+}
+
+.resultado {
+  margin-top: 20px;  /* Espaço acima */
+  font-size: 1.1em; /* Tamanho da fonte um pouco maior que o normal */
+}
+
+/*PREVISÃO DOS DIAS SEGUINTES*/
+
+#previsao {
+  margin-top: 20px; /* Espaço acima */
+}
+
+.card {
+  background: rgba(9, 36, 94, 0.733); /* Fundo azul escuro com transparência */
+  margin: 10px 0; /* Espaço acima e abaixo de cada card */
+  padding: 10px;  /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+}

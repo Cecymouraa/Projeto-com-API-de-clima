@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Previsão do Tempo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Horário no topo -->
+  <h1 id="horario" class="relogio"></h1> <!-- Título grande que exibe o horário (será atualizado via JavaScript) h1 é filho direto de <body> -->
+  <!-- div.container é filho direto de <body> -->
+  <div class="container">  <!-- Container central com a interface da previsão -->
+
+     <!-- h2 é filho de .container -->
+    <h2>Previsão do Tempo</h2> <!-- Subtítulo dentro do container -->
+
+     <!-- INPUT é filho de .container -->
+    <input type="text" id="city" placeholder="Digite a cidade...">   <!-- Campo de texto para digitar o nome da cidade -->
+
+     <!-- button é filho de .container -->
+    <button onclick="buscarClima()">Buscar</button> <!-- Botão que chama a função buscarClima() ao ser clicado -->
+
+    <!-- div#previsao é filha de .container -->
+    <!-- Área onde os cards de previsão serão inseridos via JavaScript -->
+    <div id="previsao" class="resultado"></div>
+  </div>
+
+  <!-- script é filho de <body> -->
+  <!-- Importa o arquivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
